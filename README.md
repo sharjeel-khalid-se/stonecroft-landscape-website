@@ -59,13 +59,9 @@ stonecroft-landscape-website/
 
 Designed for static hosting, including SiteGround shared hosting, subject to the host's supported configuration.
 
-## Screenshots
-
-Add desktop and mobile screenshots here.
-
 ## Live Demo
 
-[Add your deployed website URL]
+https://stonecroft-landscape-website.vercel.app/
 
 ## Developer
 
