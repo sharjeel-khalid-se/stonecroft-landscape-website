@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Stonecroft Landscape & Design</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Stonecroft Landscape & Design Homepage">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M16 3C16 3 8 9 8 18C8 22.4183 11.5817 26 16 26C20.4183 26 24 22.4183 24 18C24 9 16 3 16 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 9V23" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          <path d="M16 15C18 13.5 20 14 20 14" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          <path d="M16 18C13.5 16.5 12 17 12 17" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        </svg>
+        <span>Stonecroft</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Our Work</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="blog.html" class="nav-link">Journal</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta">Request an Estimate</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+  <!-- 404 Hero -->
+  <main class="page-hero" style="flex: 1; display: flex; align-items: center;">
+    <div class="container container-narrow text-center" style="padding-top: var(--space-20); padding-bottom: var(--space-20);">
+      <span class="text-label" style="color: var(--green-300);">Error 404</span>
+      <h1 style="color: var(--white); margin-top: var(--space-2); margin-bottom: var(--space-4);">We seem to have lost the path.</h1>
+      <p style="color: var(--sand-300); margin: 0 auto var(--space-8); max-width: 480px;">The page or project you requested has moved or is no longer cultivated on our server. Let us guide you back to the main grounds.</p>
+      <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+        <a href="index.html" class="btn btn-secondary btn-lg">Return to Homepage</a>
+        <a href="services.html" class="btn btn-outline-light btn-lg">Browse Services</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding-top: var(--space-6);">
+        <p>&copy; 2026 Stonecroft Landscape & Design, LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
