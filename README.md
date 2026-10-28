@@ -1,72 +1,74 @@
-# Stonecroft Landscape & Design — Portfolio Website
+# Stonecroft Landscape & Design Website
 
-A premium, responsive, human-designed website for **Stonecroft Landscape & Design**, an artisan residential landscape architecture and estate stewardship firm.
+A premium, responsive website concept for a residential landscape architecture and estate stewardship firm.
 
-Developed without generic AI design patterns or cookie-cutter template cliches. The aesthetic is inspired by high-end estate gardening, native stone masonry, and natural topography.
+## Overview
 
----
+Stonecroft Landscape & Design is a multi-page website designed to showcase landscaping services, highlight completed projects, and encourage potential clients to request consultations.
 
-## 📁 Project Architecture & File Inventory
+The visual direction draws inspiration from natural stone, estate gardens, and organic landscapes, using a refined color palette, editorial typography, and spacious layouts.
 
+## Features
+
+- Responsive layouts for desktop, tablet, and mobile
+- Dedicated Home, Services, About, Gallery, Contact, and Blog pages
+- Interactive portfolio gallery with category filters and image lightbox
+- Accessible consultation form with client-side validation and honeypot spam protection
+- Technical blog and detailed article page
+- Semantic HTML and SEO metadata
+- JSON-LD structured data
+- Custom 404 page, robots.txt, and XML sitemap
+- Apache configuration for caching, compression, and security headers
+- Lightweight implementation without a front-end framework
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Intersection Observer API
+- Apache / SiteGround hosting configuration
+
+## Project Structure
+
+```text
+stonecroft-landscape-website/
+├── index.html
+├── services.html
+├── about.html
+├── gallery.html
+├── contact.html
+├── blog.html
+├── blog-post.html
+├── 404.html
+├── css/style.css
+├── js/main.js
+├── .htaccess
+├── robots.txt
+└── sitemap.xml
 ```
-├── .htaccess                 # SiteGround Apache optimizations (Gzip, browser caching, security headers)
-├── robots.txt                # Search engine crawler instructions
-├── sitemap.xml               # Standard XML sitemap with all core routes
-├── 404.html                  # Branded 404 error page
-├── index.html                # Homepage with transparent/scrolled header & narrative intro
-├── services.html             # Detailed breakdown of 6 core landscape specializations & FAQs
-├── about.html                # Firm heritage, craft standards, and team credentials
-├── gallery.html              # Filterable portfolio with interactive image lightbox
-├── contact.html              # Accessible consultation request form with honeypot spam protection
-├── blog.html                 # Horticultural & masonry field journal
-├── blog-post.html            # In-depth technical guide (stone selection & freeze-thaw physics)
-├── css/
-│   └── style.css             # Comprehensive modular CSS design system (zero external framework bloat)
-└── js/
-    └── main.js               # Clean vanilla JavaScript (navigation, lightbox, filtering, form validation)
-```
 
----
+## Getting Started
 
-## 🎨 Design Direction Highlights
+1. Clone this repository.
+2. Open `index.html` in a browser, or run a local static server.
+3. Review the pages and test the gallery, navigation, and form validation.
+4. Configure the production domain and hosting settings before deployment.
 
-- **Nature-Inspired Palette:** Deep forest green (`#1a3a2a`), warm sandy stone (`#f5f2ed` / `#c8b89a`), and muted botanical accents (`#6b8f4e`).
-- **Typography:** DM Serif Display for warm, artisanal headings paired with Inter for clean, legible body text.
-- **Asymmetric Spacing & Layouts:** Alternating image-text splits, masonry-proportioned portfolio grids, and dark contrasting accent sections.
-- **Subtle Motion:** Scroll-triggered IntersectionObserver fade-ins without distracting parallax or bouncing effects.
-- **Micro-Interactions:** Custom lightbox modal for portfolio imagery, interactive category filtering, and real-time form field validation.
+## Deployment
 
----
+Designed for static hosting, including SiteGround shared hosting, subject to the host's supported configuration.
 
-## 🚀 SiteGround Hosting & Deployment Instructions
+## Screenshots
 
-This website was built as a zero-dependency static site, ensuring **100% native compatibility with all SiteGround shared, cloud, and WordPress hosting tiers**.
+Add desktop and mobile screenshots here.
 
-### Option A: Uploading via SiteGround Site Tools File Manager (Fastest)
-1. Log in to your **SiteGround Client Area**.
-2. Go to **Websites** > click **Site Tools** next to your domain.
-3. In the left navigation, choose **Site** > **File Manager**.
-4. Open the `public_html` directory.
-5. Upload all project files and folders (`css/`, `js/`, `.htaccess`, `robots.txt`, `sitemap.xml`, and all `.html` files).
-6. Verify your site by visiting your domain in any browser.
+## Live Demo
 
-### Option B: Deploying via FTP / SFTP
-1. In **Site Tools** > **Site** > **FTP Accounts**, create or note your FTP credentials.
-2. Connect using FileZilla, Cyberduck, or your preferred FTP client:
-   - **Host:** `ftp.yourdomain.com` (or the IP listed in Site Tools)
-   - **Port:** `21` (FTP) or `18765` (SFTP)
-3. Transfer all files into the remote `public_html/` folder.
+[Add your deployed website URL]
 
-### Performance & Caching Verification on SiteGround
-- The included `.htaccess` file activates `mod_deflate` (Gzip) and `mod_expires` (1-year asset caching).
-- In SiteGround **Site Tools** > **Speed** > **Caching**, ensure **NGINX Direct Delivery** and **Dynamic Cache** are turned **ON** for optimal Core Web Vitals.
+## Developer
 
----
+Sharjeel Khalid — Software Engineering Student and Web Developer.
 
-## 🔍 SEO & Technical Standards
-
-- **Semantic HTML5:** `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`, and heading hierarchy (`h1` through `h4`).
-- **Schema.org Structured Data:** `LandscapeService` JSON-LD embedded on the homepage.
-- **Social Metadata:** Complete Open Graph (`og:title`, `og:description`, `og:image`, `og:url`) on every page.
-- **Accessibility:** Touch targets ≥ 44px, visible focus states, form labels explicitly bound to inputs, and descriptive image `alt` tags.
-- **Spam Protection:** Integrated honeypot input field on the consultation form.
+This project demonstrates my approach to responsive web design, front-end interactions, SEO fundamentals, accessibility, and performance-conscious implementation.
